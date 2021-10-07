@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem auto;
+    background: rgb(88,170,223);
+    background: linear-gradient(16deg, rgba(88,170,223,1) 0%, rgba(128,105,232,1) 53%, rgba(186,67,239,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+form{
+    width: 30rem;
+    font-size: 1.3rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+form h1{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.group{
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+.group label{
+    display: block;
+}
+
+.group input , select, textarea{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #808080;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+
+
+.btn{
+    background: rgb(88,170,223);
+    background: linear-gradient(270deg, rgba(88,170,223,1) 0%, rgba(128,105,232,1) 53%, rgba(186,67,239,1) 100%);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 4rem;
+    outline: 0;
+    border:0;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition:.2s transform ease-in;
+}
+
+.btn:hover{
+    transform: translateY(3px);
+}
+
+.btn i{
+    padding-left: 5px;
+    
+}
+
+
+/* thank you page */
+header{
+    width: 40rem;
+    height: 40rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 1rem;
+}
+
+header .icon{
+    color: green;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Validation styling */
+input[type="text"]:required:valid, 
+input[type="email"]:required:valid,
+input[type="text"] :valid,
+input[type="email"]:valid
+{
+    background: url(./icon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-color: rgb(54, 236, 54);
+}
+
+
+input[type="text"]:required, 
+input[type="email"]:required,
+input[type="text"] :invalid,
+input[type="email"]:invalid {
+    border-color: rgb(236, 54, 54);
+}
+
+
+
+
+   
+ 

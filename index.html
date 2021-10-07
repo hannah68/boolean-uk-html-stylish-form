@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>boolean-uk-html-stylish-form</title>
+</head>
+<body>
+    <form action="./thanks-page.html">
+        <h1>Say Hello!</h1>
+
+        <div class="group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required minlength="5" maxlength="12"/>
+        </div>
+
+        <div class="group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email address" required/>
+        </div>
+
+        <div class="group">
+            <label for="service">Needed Services</label>
+            <select name="service" id="service">
+                <option value="services">Choose Services</option>
+                <option value="installation">Installation</option>
+                <option value="repair">Repair</option>
+                <option value="repair">Repair</option>
+            </select>
+        </div>
+
+        <div class="group">
+            <label for="budget">Budget</label>
+            <select name="budget" id="budget">
+                <option value="Budgets">Select Budget</option>
+                <option value="£100-£400">£100-£400</option>
+                <option value="£400-£500">£400-£500</option>
+                <option value="£500 +">£500 +</option>
+            </select>
+        </div>
+
+        <div class="group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message here..."></textarea>
+        </div>
+
+        <button class="btn" type="submit">Submit <i class="fas fa-arrow-right"></i></button>
+    </form>
+</body>
+</html>
